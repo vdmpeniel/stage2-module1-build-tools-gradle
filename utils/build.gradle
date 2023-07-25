@@ -8,7 +8,7 @@ java {
 }
 
 repositories {
-    mavenLocal() // This makes the project be published into the local maven repo (.m2 folder)
+    mavenCentral()
 }
 
 publishing {
@@ -25,9 +25,9 @@ publishing {
 dependencies {
     // add Apache Commons Lang 3.10 (or higher) dependency
     //implementation // https://mavenlibs.com/maven/dependency/org.apache.commons/commons-lang3
-    //implementation 'org.apache.commons:commons-lang3:3.12.0'
+    //implementation 'org.apache.commons:commons-lang3:3.10.0'
 
-    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
 }
 
 
